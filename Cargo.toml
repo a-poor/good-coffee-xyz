@@ -5,9 +5,9 @@ edition = "2021"
 
 [dependencies]
 axum = "0.6.20"
-handlebars = "4.4.0"
-markdown = "0.3.0"
+maud = { version = "0.25.0", features = ["axum"] }
 rust-embed = "8.0.0"
 shuttle-axum = "0.30.0"
 shuttle-runtime = "0.30.0"
 tokio = "1.28.2"
+tower-http = { version = "0.4.0", features = ["fs"] }
