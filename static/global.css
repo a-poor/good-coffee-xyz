@@ -1,1 +1,20 @@
-@import "https://unpkg.com/open-props";
+@import "/static/normalize.min.css";
+@import "/static/open-props.min.css";
+@import "/static/buttons.min.css";
+
+header {}
+
+.index-atf {
+    background-image: var(--gradient-26);
+    min-height: var(--size-15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-atf h1 {
+    font-size: var(--font-size-8);
+    font-weight: var(--font-weight-6);
+}
+
