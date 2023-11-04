@@ -13,15 +13,21 @@ pub async fn index() -> Markup {
       body {
         header {
           div {
-            a href="/" { "GoodCoffee.xyz" }
+            a.logo href="/" { "GoodCoffee.xyz" }
           }
-          nav {}
-          div {}
+          div style="flex-grow: 1;" {}
+          nav {
+            ul {
+              li { a href="/" { "Home" } }
+              li { a href="/reviews" { "Reviews" } }
+              li { a href="/about" { "About" } }
+            }
+          }
         }
         main {
           div ."index-atf" {
-            h1 { "GoodCoffee.xyz" }
-            p { "Check out some coffee reviews!" }
+            h1 { "Good Coffee" }
+            p { "Check out some of my coffee reviews!" }
           }
         }
         footer {}
